@@ -3,9 +3,19 @@
     --grid-rows: 1;
 }
 
+body{
+    font-family: monospace;
+}
+
+#reset{
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+}
+
 #grid-container{
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 1px;
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     grid-template-rows: repeat(var(--grid-rows),1fr);
 }
@@ -14,9 +24,5 @@
     padding: 1em;
     border: 1px solid black;
     text-align: center;
-}
-
-.grid-item:hover{
-    background-color: lightblue;
 }
 
